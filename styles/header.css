@@ -3,6 +3,15 @@
   height: 55px;
   flex-direction: row;
   justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: grey;
+  z-index: 20;
 }
 
 .left-section {
@@ -50,6 +59,7 @@
 }
 
 .search-button {
+  position: relative;
   height: 39px;
   width: 66px;
   background-color: rgb(240, 240, 240);
@@ -102,13 +112,45 @@
 .apps-icon {
   height: 24px;
 }
+.settings-button .tooltip {
+  z-index: 100;
+}
+.youtube-button,
+.settings-button {
+  background-color: white;
+  border: none;
+}
 
 .notification-button {
   background-color: white;
   border: none;
 }
+
 .notification-icon {
   height: 24px;
+}
+
+.notification-number-div {
+  position: relative;
+}
+
+.notification-number {
+  position: absolute;
+  background-color: rgb(206, 10, 10);
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 10px;
+  font-weight: 500;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+  top: -4px;
+  right: -6px;
 }
 
 .user-profile-button {
@@ -119,4 +161,49 @@
 .user-profile-icon {
   height: 32px;
   border-radius: 16px;
+}
+
+.tooltip {
+  font-family: Roboto, Arial;
+}
+.search-button,
+.voice-button,
+.video-icon-button,
+.apps-button,
+.notification-button,
+.youtube-button {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.search-button .tooltip,
+.voice-button .tooltip,
+.video-icon-button .tooltip,
+.apps-button .tooltip,
+.notification-button .tooltip,
+.youtube-button .tooltip {
+  position: absolute;
+  background-color: grey;
+  color: white;
+  font-size: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 8px;
+  padding-left: 8px;
+  border-radius: 2px;
+  bottom: -30px;
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.video-icon-button:hover .tooltip,
+.apps-button:hover .tooltip,
+.notification-button:hover .tooltip,
+.youtube-button:hover .tooltip {
+  opacity: 1;
+  cursor: pointer;
 }

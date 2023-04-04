@@ -10,37 +10,90 @@
     <link rel="stylesheet" href="/styles/header.css" />
     <link rel="stylesheet" href="/styles/video.css" />
     <link rel="stylesheet" href="/styles/general.css" />
+    <link rel="stylesheet" href="/styles/side-bar.css" />
+
     <title>YouTube.com</title>
   </head>
 
   <body>
     <div class="header">
       <div class="left-section">
+        <button class="settings-button">
         <img class="hamburger-icon" src="header-icons/hamburger-menu.svg" />
+       
+        </button>
+        <button class="youtube-button">
         <img class="youtube-icon" src="header-icons/youtube-logo.svg" />
+        <div class="tooltip">YouTube</div>
+      </button>
+      </button>
       </div>
       <div class="center-section">
         <input class="search-bar" type="text" placeholder="Search" />
         <button class="search-button">
           <img class="search-icon" src="header-icons/search.svg" />
+          <div class="tooltip">Search</div>
         </button>
         <button class="voice-button">
           <img class="voice-icon" src="header-icons/voice-search-icon.svg" />
+          <div class="tooltip">Voice</div>
         </button>
       </div>
       <div class="right-section">
         <button class="video-icon-button">
           <img class="video-icon" src="header-icons/upload.svg" />
+          <div class="tooltip">Upload</div>
         </button>
         <button class="apps-button">
           <img class="apps-icon" src="header-icons/youtube-apps.svg" />
+          <div class="tooltip">Apps</div>
         </button>
         <button class="notification-button">
-          <img class="notification-icon" src="header-icons/notifications.svg" />
+          <div class="notification-number-div">
+            <img
+              class="notification-icon"
+              src="header-icons/notifications.svg"
+            />
+            <div class="tooltip">Notifications</div>
+            <div class="notification-number">3</div>
+          </div>
         </button>
         <button class="user-profile-button">
           <img class="user-profile-icon" src="channel-pictures/channel-7.jpg" />
         </button>
+      </div>
+    </div>
+
+    <div class="side-bar">
+      <div class="sidebar-link">
+        <img src="side-bar-icons/home.svg" />
+        <div>Home</div>
+        
+      </div>
+      <div class="sidebar-link">
+        <img src="side-bar-icons/explore.svg" />
+        <div>Explore</div>
+      
+      </div>
+      <div class="sidebar-link">
+        <img src="side-bar-icons/subscriptions.svg" />
+        <div>Subscriptions</div>
+  
+      </div>
+      <div class="sidebar-link">
+        <img src="side-bar-icons/originals.svg" />
+        <div>Originals</div>
+     
+      </div>
+      <div class="sidebar-link">
+        <img src="side-bar-icons/youtube-music.svg" />
+        <div>YouTube Music</div>
+   
+      </div>
+      <div class="sidebar-link">
+        <img src="side-bar-icons/library.svg" />
+        <div>Library</div>
+       
       </div>
     </div>
 
@@ -51,6 +104,8 @@
             class="thumbnail"
             src="youtube project thumbnails/thumbnail-1.webp"
           />
+
+          <div class="time-stamp">14:20</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -75,6 +130,7 @@
             class="thumbnail"
             src="youtube project thumbnails/thumbnail-7.webp"
           />
+          <div class="time-stamp">8:20</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -95,6 +151,7 @@
             class="thumbnail"
             src="youtube project thumbnails/thumbnail-3.webp"
           />
+          <div class="time-stamp">4:20</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -119,6 +176,7 @@
             class="thumbnail"
             src="youtube project thumbnails/thumbnail-4.webp"
           />
+          <div class="time-stamp">1:29</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -144,6 +202,7 @@
             class="thumbnail"
             src="youtube project thumbnails/thumbnail-5.webp"
           />
+          <div class="time-stamp">5:42</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -168,6 +227,7 @@
             class="thumbnail"
             src="youtube project thumbnails/thumbnail-6.webp"
           />
+          <div class="time-stamp">11:55</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
